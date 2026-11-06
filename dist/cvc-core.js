@@ -1,0 +1,11 @@
+(function(root){
+ const words=['cat','pen','pig','dog','sun','hat','map','hen','sit','top','van','pin'];
+ const art={cat:'c',pig:'p',dog:'d',sun:'s',hat:'h',map:'m',top:'t',van:'v'};
+ const similar={cat:['hat','cut'],pen:['pin','pan'],pig:['peg','pit'],dog:['dig','dot'],sun:['sin','sum'],hat:['hot','cat'],map:['mop','mat'],hen:['pen','hat'],sit:['sat','sip'],top:['tap','tip'],van:['fan','vat'],pin:['pen','pig']};
+ const mix=(a,rng)=>a.map(v=>({v,k:rng()})).sort((a,b)=>a.k-b.k).map(x=>x.v);
+ function create(rng=Math.random){return {type:'cvc-diagnostic',schemaVersion:1,index:0,startedAt:new Date().toISOString(),answers:[],items:words.map((word,i)=>{const task=i%3===0?'read-picture':i%3===1?'build':'listen-word';return {id:'cvc:'+i,word,task,options:task==='read-picture'?mix([word,...mix(Object.keys(art).filter(w=>w!==word),rng).slice(0,2)],rng):task==='build'?mix([...new Set([...word,...'aetopins'.split('')])].slice(0,7),rng):mix([word,...similar[word]],rng)};})};}
+ function events(run,q){return run.answers.filter(e=>e.questionKey===q.id);}
+ function answer(run,selected){const q=run.items[run.index];if(!q)return {accepted:false};const prior=events(run,q);if(prior.some(e=>e.correct)||prior.some(e=>e.answer===selected)||selected.length!==3)return {accepted:false};if(q.task==='build'?![...selected].every(l=>q.options.includes(l)):!q.options.includes(selected))return {accepted:false};const e={questionKey:q.id,word:q.word,task:q.task,answer:selected,correct:selected===q.word,attempt:prior.length+1,at:new Date().toISOString(),questionIndex:run.index};run.answers.push(e);return {accepted:true,correct:e.correct,event:e};}
+ function report(run,childName){const detail=run.items.map(q=>{const e=events(run,q);return {word:q.word,task:q.task,firstTry:e[0]?.correct??null,completed:e.some(e=>e.correct),errors:e.filter(e=>!e.correct)};});return {type:'cvc-diagnostic',schemaVersion:1,at:new Date().toISOString(),childName,startedAt:run.startedAt,completed:detail.every(d=>d.completed),score:detail.filter(d=>d.firstTry).length,total:detail.length,detail,answers:run.answers.slice(),scope:'Чтение слова → картинка, сборка услышанного слова, узнавание написанного слова на слух. Это разные навыки; устное чтение не оценивалось.'};}
+ root.CvcCore={words,art,create,answer,events,report};
+})(globalThis);

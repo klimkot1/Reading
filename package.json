@@ -1,0 +1,12 @@
+{
+  "name": "orbita-reading",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Children’s English letter, phonics and CVC diagnostic platform",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node tests/diagnostics.cjs && node tests/voice-service.mjs"
+  }
+}

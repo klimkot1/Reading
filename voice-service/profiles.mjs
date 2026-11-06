@@ -1,0 +1,8 @@
+export const profiles=[
+ {id:'orbi',name:'Орби',voice:'cedar',description:'Тёплый, выразительный мультяшный проводник',direction:'Use an original warm animated-storybook character voice. Friendly, expressive, natural, gently playful. Clear standard American English. Never imitate a real person or an existing fictional character. Preserve phonetic clarity.'},
+ {id:'luna',name:'Луна',voice:'marin',description:'Мягкий и светлый сказочный голос',direction:'Use an original bright gentle animated-fairy-tale voice. Natural, smiling, calm, expressive and clear standard American English. Never imitate a real person or an existing fictional character. Preserve phonetic clarity.'},
+ {id:'spark',name:'Искра',voice:'coral',description:'Бодрый, игривый маленький герой',direction:'Use an original energetic animated-adventure character voice. Playful and bouncy but natural, not robotic or excessively squeaky. Clear standard American English. Never imitate a real person or an existing fictional character. Preserve phonetic clarity.'}
+];
+export const letterNames={a:'ay',b:'bee',c:'see',d:'dee',e:'ee',f:'eff',g:'gee',h:'aitch',i:'eye',j:'jay',k:'kay',l:'ell',m:'em',n:'en',o:'oh',p:'pee',q:'cue',r:'ar',s:'ess',t:'tee',u:'you',v:'vee',w:'double you',x:'ex',y:'why',z:'zee'};
+export const words=['apple','ball','cat','dog','fish','hat','map','pig','sun','top','umbrella','van','pen','hen','sit','pin'];
+export const tokens=[...Object.entries(letterNames).map(([letter,text])=>({id:'letter:'+letter,text,alternatives:[text,letter]})),...words.map(word=>({id:'word:'+word,text:word,alternatives:[word]}))];

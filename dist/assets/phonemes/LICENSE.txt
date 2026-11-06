@@ -1,0 +1,76 @@
+Phonicademy 44 Sounds Audio Pack
+Phonicademy Audio License, version 2.0 (October 30, 2026)
+Free for personal and commercial use, with attribution
+(c) 2026 Phonicademy, operated by Pixeliro - https://phonicademy.com
+
+Full license: https://phonicademy.com/audio-license
+
+You may use these sound files ("the Assets") free of charge, worldwide and
+non-exclusively, in personal and commercial projects, as long as you build
+them into your own product and credit Phonicademy.
+
+YOU MAY
+- Use the Assets in personal and commercial apps, games, websites, e-learning
+  courses, videos, podcasts, classroom materials and other educational
+  products, including paid and ad-supported ones.
+- Bundle the Assets inside your product and distribute that product to its
+  users worldwide, including through app stores and digital platforms.
+- Modify, trim, normalize, convert, re-order or adapt the Assets.
+- Play and share them at home, in class, in tutoring and in therapy sessions.
+
+YOU MAY NOT
+- Sell, resell, sublicense, share or give away the Assets on their own, as
+  an audio pack, sample library or sound bank, even with changes. Link to
+  our free download page instead:
+  https://phonicademy.com/printables/phonics-audio-pack
+- Make the Assets available for download or extraction as a separate asset
+  collection, or put them in another stock audio library, asset marketplace
+  or asset distribution service.
+- Use the Assets to train, fine-tune or test AI or machine-learning models,
+  put them in datasets, or clone or imitate the voice, without our separate
+  written permission.
+- Claim ownership of the Assets, present them as your own recordings, or
+  imply that Phonicademy endorses you or your product.
+- Use them for anything illegal, misleading or harmful.
+
+ATTRIBUTION (REQUIRED)
+Every product, video or publication that uses the Assets must credit
+Phonicademy with this line (or a close equivalent):
+
+  Phonics sounds: Phonicademy (phonicademy.com)
+
+Put it where credits normally go and where users can find it: an app's
+About / Credits / Settings screen or its store description; a website's
+footer or credits page; a video or podcast description; the credits page or
+back cover of a course, book or printable. Playing the sounds privately at
+home or in your own class needs no credit.
+
+LICENSE TERMS
+- Type: non-exclusive, royalty-free, free of charge.
+- Territory: worldwide. Duration: perpetual, for each product you make while
+  this license applies.
+- Commercial use: allowed. Modification: allowed. Attribution: required.
+- Redistribution: only built into a larger product, never as standalone files.
+- Transfer: this license is personal to you and cannot be transferred, but
+  users of your product may use the Assets inside it.
+- You get no ownership and no exclusive rights in the Assets.
+
+ABOUT THE ASSETS
+The Assets were created by Phonicademy.com.
+
+NO WARRANTY
+The Assets are provided free and "as is", without warranty of any kind,
+including accuracy, fitness for a particular purpose or non-infringement.
+To the fullest extent the law allows, we are not liable for any loss or
+damage arising from their use, and we do not guarantee that their use will
+be free from third-party claims.
+
+CHANGES
+We may update this license, or replace or remove files, at any time. A
+product you have already released under a version of this license may keep
+using the Assets on the terms of that version.
+
+ACCEPTANCE
+By downloading or using the Assets you agree to this license.
+Questions or permissions beyond it: phonicademy@gmail.com
+(subject "Audio license") - https://phonicademy.com/audio-license

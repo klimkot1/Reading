@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "status": "not_connected",
+  "profiles": [
+    {"id":"orbi","name":"Орби","description":"Тёплый, выразительный голос мультяшного проводника","ready":false,"clips":{}},
+    {"id":"luna","name":"Луна","description":"Мягкий, светлый голос сказочного персонажа","ready":false,"clips":{}},
+    {"id":"spark","name":"Искра","description":"Бодрый, игривый голос маленького героя","ready":false,"clips":{}}
+  ]
+}
